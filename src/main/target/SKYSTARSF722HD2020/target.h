@@ -17,12 +17,12 @@
 
 #pragma once
 
-#define TARGET_BOARD_IDENTIFIER "SS7D2020"
+#define TARGET_BOARD_IDENTIFIER "WGSD"
 
 #define USBD_PRODUCT_STRING  "SkystarsF722HD2020"
 
-#define LED0                    PC14 // green
-#define LED1                    PC15 // blue
+#define LED0                    PC15 // green
+#define LED1                    PC14 // blue
 
 #define BEEPER                  PB2
 #define BEEPER_INVERTED
@@ -39,7 +39,7 @@
 #define MPU6000_SPI_BUS          BUS_SPI1
 
 #define USE_IMU_MPU6000
-#define IMU_MPU6000_ALIGN        CW90_DEG_FLIP
+#define IMU_MPU6000_ALIGN        CW270_DEG
 
 // *************** M25P256 flash ********************
 #define USE_FLASHFS
@@ -100,7 +100,7 @@
 #define SERIAL_PORT_COUNT       7
 
 #define DEFAULT_RX_TYPE         RX_TYPE_SERIAL
-#define SERIALRX_PROVIDER       SERIALRX_SBUS
+#define SERIALRX_PROVIDER       SERIALRX_CRSF
 #define SERIALRX_UART           SERIAL_PORT_USART1
 
 // *************** I2C ****************************
